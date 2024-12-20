@@ -3,7 +3,7 @@
 import 'server-only';
 import { Image, Text, View } from 'react-native';
 
-export async function Pokemon() {
+export async function pokemon() {
   const res = await fetch('https://pokeapi.co/api/v2/pokemon/2');
   const json = await res.json();
   return (
